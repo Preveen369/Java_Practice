@@ -1,13 +1,3 @@
-
-/**
- * The problem requires reversing a string in-place, which means directly modifying the input array 
- * without using additional memory for another array. A two-pointer approach works efficiently:
-
-    Place one pointer at the beginning of the array and another at the end.
-    Swap the characters at these two pointers.
-    Move the pointers closer until they meet.
- */
-
 import java.util.Arrays;
 
 public class ReverseString {

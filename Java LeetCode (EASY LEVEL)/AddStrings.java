@@ -1,5 +1,5 @@
 public class AddStrings {
-    // Approach - 1
+    // Approach - 1 : String to num (ASCII conversion)
     // public static int convert(String x){
     //     int num = 0;
     //     for(int j=0; j < x.length(); j++) 
@@ -15,9 +15,10 @@ public class AddStrings {
 
     // }
 
+    // Approach - 2 : Digitwise Addition
     public String addStrings(String num1, String num2) {
         StringBuilder result = new StringBuilder();
-        int carry = 0;
+        int carry = 0; 
         int i = num1.length() - 1, j = num2.length() - 1;
 
         while (i >= 0 || j >= 0 || carry > 0) {
