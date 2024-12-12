@@ -1,5 +1,6 @@
 public class MoveZeroesToEnd {
     static int[] pushZerosToEnd(int[] arr) {
+        // Approach -> using temp[] array
         int n = arr.length;
         int[] temp = new int[n];
         int j=0;
@@ -13,6 +14,7 @@ public class MoveZeroesToEnd {
         }
         return arr;
 
+        // Approach -> Two traversals
         // int n = arr.length;
         // int count = 0;
         // for (int i=0; i<n; i++){
@@ -26,6 +28,7 @@ public class MoveZeroesToEnd {
         // }
         // return arr;
 
+        // Approach -> One traversal
         // int n = arr.length;
         // int count = 0;
         // for (int i=0; i<n; i++){

@@ -11,16 +11,12 @@ public class RotateArray {
         }
     }
     public void rotateArray(int arr[], int d) {
-        // // Approach -> Reversal Algorithm
-        // int n = arr.length; 
-        // d = d % n; // for (d steps > n)
-        // reverseArray(arr, 0, d-1);
-        // reverseArray(arr, d, n-1);
-        // reverseArray(arr, 0, n-1);
-
-        // for (int val: arr){
-        //     System.out.print(val + " ");
-        // }
+        // Approach -> Reversal Algorithm
+        int n = arr.length; 
+        d = d % n; // for (d steps > n)
+        reverseArray(arr, 0, d-1);
+        reverseArray(arr, d, n-1);
+        reverseArray(arr, 0, n-1);
         
         // Approach -> (n*d) rotation
         // int n = arr.length; 
@@ -33,21 +29,6 @@ public class RotateArray {
         //     }
         //     arr[n-1] = temp;
         // }
-
-        // Approach -> temp[] array creation
-        int n = arr.length;  //6
-        int[] temp = new int[n];
-        d = d % n;  // for d>n
-        for (int i=0; i<n-d;i++){
-            temp[i] = arr[d + i];
-        } 
-        for (int i=0; i<d;i++){
-            temp[n-d+i] = arr[i];
-        } 
-        for (int i=0; i<n; i++){
-            arr[i] = temp[i];
-        }
-
     }
     public static void main(String[] args) {
         RotateArray ro_arr = new RotateArray();
