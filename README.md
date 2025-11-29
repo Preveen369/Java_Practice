@@ -1,4 +1,4 @@
-# Java Practice
+# Java Practice 🪶
 Java Practice is a comprehensive repository of Java code examples, demos, and explanatory Markdown files designed for learners to master core Java concepts. It covers everything from foundational programming basics to advanced topics like the Collections Framework, Object-Oriented Programming (OOPS), serialization, generics, and modern Java features. Each section includes runnable demos and detailed concept overviews to facilitate hands-on learning and experimentation.
 
 ---
